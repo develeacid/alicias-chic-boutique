@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('url_imagen');
             $table->string('descripcion')->nullable();
-            $table->foreignId('ropa_id')->constrained('ropa')->index();
+            $table->foreignId('ropa_id')->constrained('ropa')->index('imagenes_ropa_ropa_id_foreign');
             $table->timestamps();
         });
     }
