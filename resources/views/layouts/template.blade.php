@@ -75,13 +75,11 @@
 
     <!-- Header Section Begin -->
     <header class="header">
-        @include('header', ['title' => 'Página de inicio'])
+        @include('header')
     </header>
     <!-- Header Section End -->
     <!-- Content Section -->
-
-    @include('home')
-
+    @yield('content')
     <!-- Content Section End -->
     <!-- Footer Section Begin -->
     <footer class="footer">
