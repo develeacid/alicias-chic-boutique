@@ -20,7 +20,9 @@
                                 <option value="3">3 por pagina</option>
                                 <option value="5">5 por pagina</option>
                             </select>
+                            @if($search !== '')
                             <button wire:click="clear" class=" p-2 border rounded-md">xx</button>
+                            @endif
                         </div>                        
                         <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
                             <table class="min-w-full divide-y divide-gray-200">
