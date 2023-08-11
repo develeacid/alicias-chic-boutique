@@ -1,9 +1,9 @@
-<div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
-    <div>
+<div class=" d-flex flex-column justify-content-center align-items-center bg-light" style="min-height: 50vh!important">
+    <div class="mb-3">
         {{ $logo }}
     </div>
 
-    <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
+    <div class="w-100 max-w-md px-4 py-3 bg-white shadow rounded-lg contact__form">
         {{ $slot }}
     </div>
 </div>

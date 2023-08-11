@@ -5,9 +5,9 @@
         </h2>
     </x-slot>
 
-    <div class="py-12">
+    <h1>Listado de Usuarios</h1>
+    <p>{{ $mensaje }}</p>
 
-    <livewire:user.index />
 
-    </div>
+
 </x-app-layout>

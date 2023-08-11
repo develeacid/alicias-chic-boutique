@@ -1,8 +1,5 @@
-@extends('layouts.template')
-
 @section('title', 'Blog')
-
-@section('content')
+<x-guest-layout>
     <!-- Breadcrumb Section Begin -->
     <section class="breadcrumb-blog set-bg" data-setbg="img/breadcrumb-bg.jpg">
         <div class="container">
@@ -113,4 +110,4 @@
         </div>
     </section>
     <!-- Blog Section End -->
-@endsection
+</x-guest-layout>

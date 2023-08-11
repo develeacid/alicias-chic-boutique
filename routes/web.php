@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UsuarioController;
 
 /*
 rutas base 
@@ -20,7 +21,5 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
     
-    Route::get('/users', function () {
-        return view('users');
-    })->name('users');
+    Route::get('/users', [UsuarioController::class, 'index'])->name('users');
 });

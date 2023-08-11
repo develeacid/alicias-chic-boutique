@@ -1,8 +1,5 @@
-@extends('layouts.template')
-
 @section('title', 'Tienda')
-
-@section('content')
+<x-guest-layout>
     <!-- Breadcrumb Section Begin -->
     <section class="breadcrumb-option">
         <div class="container">
@@ -650,4 +647,4 @@
         </div>
     </section>
     <!-- Shop Section End -->
-@endsection
+</x-guest-layout>
